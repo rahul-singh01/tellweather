@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Julee&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Julee&family=Poppins:ital,wght@1,500&display=swap');
+
+
+/* scroll bar fix */
+
+::-webkit-scrollbar{
+    width:0px;
+}
+
+
+body{
+    margin : 0px;
+    background-color : rgb(17, 10, 53);
+}
+
+.center_pos{
+    display: flex;
+    justify-content: center;
+}
+
+.flex_between{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.poppins_font{
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    color : white;
+}
+
+.white_txt_h1{
+    color: white;
+    font-family: 'Julee' , cursive;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+}
+
+.flex_absolute{
+    display: flex;
+    position: absolute;
+}
+
+
+.weather_mood > img{
+    /* filter:blur(2px); */
+    z-index : -1;
+    position: relative;
+}
+
+.nav_cont{
+    position: absolute;
+    display: flex;
+    width: 100%;
+    background-color: #100d0d26;
+    height: 68px;
+}
+
+.nav_cont > p{
+    margin-top: 11px;
+}
+
+.search-box{
+    display : flex;
+    margin-left : 340px;
+    margin-top: 20px;
+    /* background-image: ; */
+}
+
+.search-box > input:focus{
+    outline: none;
+}
+
+.search-box > input {
+    background : transparent;
+    border: none;
+    border-bottom: 2px solid rgb(0, 0, 0);
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Julee', cursive;
+}
+
+
+.nav_cont > p{
+    font-family: 'Aboreto', cursive;
+    padding : 5px;
+    margin-left : 10px;
+    font-size: 28px;
+}
+
+
+.inner_cont{
+    background: #292c38a1;
+    position: absolute;
+    margin-left: 50px;
+    margin-top: 100px;
+    color: white;
+    border-radius: 10px;
+}
+
+.temp_text{
+    font-size : 70px;
+    font-family:'Times New Roman';
+}
+
+.degree_text{
+    padding: 5px;
+    margin-top: 55px;
+}
+
+
+.cards_cont_forecast{
+    display: flex;
+    padding: 5px;
+    justify-content: center;
+}
+
+.forecast_box{
+    margin : 10px;
+    padding: 30px;
+    background-color: rgb(52, 40, 109);
+    border-radius : 10px;
+    border-color: rgb(255, 255, 255);
+    align-items: center;
+}
+
+.forecast_max_min{
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+}
+
+.forecast_max_min > p{
+    margin : 5px;
+}
+
+.date_style{
+    background-color: #12a0d8;
+    border-radius: 10px;
+    border: 3px solid #d874ec;
+}
+
+.current_weather{
+    display: flex;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.temp_board{
+    font-size: 60px;
+    margin-bottom: 2px;
+    margin-left: 20px;
+}
+
+
+/* .current_details{
+
+} */

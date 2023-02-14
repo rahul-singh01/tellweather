@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tell Weather</title>
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="weather_mood">
+        <div class="nav_cont">
+            <p>Tell Weather</p>
+            <span class="material-symbols-outlined search-box">
+                search<input id="locate" type="text" placeholder="Enter Location">
+            </span>
+        </div>
+
+        <div class="inner_cont">
+            <div class="current_weather">
+                <img src="//cdn.weatherapi.com/weather/64x64/night/143.png" alt="" width="50px" height="50px">
+                <!-- <p class="temp_text">31</p><p class="degree_text">o</p><p class="temp_text">C</p> -->
+                <p class="temp_board">31°C</p>
+                <p id="time_update" clas="poppins_font"></p>
+
+                <script>
+                    const time_update = document.getElementById("time_update")
+                    setInterval(function() {
+                        const t = new Date();
+                        const time = t.toLocaleTimeString();
+                        time_update.innerHTML = time
+                    
+                    }, 1000)
+                </script>
+            </div>
+            <div class="current_details center_pos">
+                <span class="material-symbols-outlined">
+                    pin_drop
+                </span> <p class="poppins_font">New Delhi , Delhi , India</p>
+            </div>
+        </div>
+        <img src="/images/rainy_weather.jpg" width="100%" height="400px" alt="">
+    </div>
+    <div>
+        <p class="white_txt_h1">
+            5 Day's Forecast
+        </p>
+    </div>
+    <div class="cards_cont_forecast">
+        <div class="forecast_box">
+            <p class="poppins_font center_pos date_style">2023-02-15</p>
+            <div class="flex_between">
+                <img src="//cdn.weatherapi.com/weather/64x64/night/143.png" alt="">
+                <p class="poppins_font">Sunny</p>
+            </div>
+
+            <div class="flex_between center_pos poppins_font">
+                <span class="material-symbols-outlined">
+                    device_thermostat
+                    </span><p>Avg. temp</p> <p>  22.5°C </p>
+            </div>
+            <div class="forecast_max_min poppins_font">
+                <p>Max 31.3°C</p>
+                <p>Min 15.7°C</p>
+            </div>
+            <div class="flex_between center_pos poppins_font">
+                <span class="material-symbols-outlined">
+                    air
+                    </span><P>Max wind  20.9 Kph</P>
+            </div>
+            <div class="flex_between center_pos poppins_font">
+                <span class="material-symbols-outlined">
+                    water_drop
+                    </span><p> Percipitation : 0.0</p>
+            </div>
+        </div>
+        <div class="forecast_box">
+            <p class="poppins_font center_pos date_style">2023-02-15</p>
+            <div class="flex_between">
+                <img src="//cdn.weatherapi.com/weather/64x64/night/143.png" alt="">
+                <p class="poppins_font">Sunny</p>
+            </div>
+
+            <div class="flex_between center_pos poppins_font">
+                <span class="material-symbols-outlined">
+                    device_thermostat
+                    </span><p>Avg. temp</p> <p>  22.5°C </p>
+            </div>
+            <div class="forecast_max_min poppins_font">
+                <p>Max 31.3°C</p>
+                <p>Min 15.7°C</p>
+            </div>
+            <div class="flex_between center_pos poppins_font">
+                <span class="material-symbols-outlined">
+                    air
+                    </span><P>Max wind  20.9 Kph</P>
+            </div>
+            <div class="flex_between center_pos poppins_font">
+                <span class="material-symbols-outlined">
+                    water_drop
+                    </span><p> Percipitation : 0.0</p>
+            </div>
+        </div>
+        <div class="forecast_box">
+            <p class="poppins_font center_pos date_style">2023-02-15</p>
+            <div class="flex_between">
+                <img src="//cdn.weatherapi.com/weather/64x64/night/143.png" alt="">
+                <p class="poppins_font">Sunny</p>
+            </div>
+
+            <div class="flex_between center_pos poppins_font">
+                <span class="material-symbols-outlined">
+                    device_thermostat
+                    </span><p>Avg. temp</p> <p>  22.5°C </p>
+            </div>
+            <div class="forecast_max_min poppins_font">
+                <p>Max 31.3°C</p>
+                <p>Min 15.7°C</p>
+            </div>
+            <div class="flex_between center_pos poppins_font">
+                <span class="material-symbols-outlined">
+                    air
+                    </span><P>Max wind  20.9 Kph</P>
+            </div>
+            <div class="flex_between center_pos poppins_font">
+                <span class="material-symbols-outlined">
+                    water_drop
+                    </span><p> Percipitation : 0.0</p>
+            </div>
+        </div>
+        <div class="forecast_box">
+            <p class="poppins_font center_pos date_style">2023-02-15</p>
+            <div class="flex_between">
+                <img src="//cdn.weatherapi.com/weather/64x64/night/143.png" alt="">
+                <p class="poppins_font">Sunny</p>
+            </div>
+
+            <div class="flex_between center_pos poppins_font">
+                <span class="material-symbols-outlined">
+                    device_thermostat
+                    </span><p>Avg. temp</p> <p>  22.5°C </p>
+            </div>
+            <div class="forecast_max_min poppins_font">
+                <p>Max 31.3°C</p>
+                <p>Min 15.7°C</p>
+            </div>
+            <div class="flex_between center_pos poppins_font">
+                <span class="material-symbols-outlined">
+                    air
+                    </span><P>Max wind  20.9 Kph</P>
+            </div>
+            <div class="flex_between center_pos poppins_font">
+                <span class="material-symbols-outlined">
+                    water_drop
+                    </span><p> Percipitation : 0.0</p>
+            </div>
+        </div>
+        <div class="forecast_box">
+            <p class="poppins_font center_pos date_style">2023-02-15</p>
+            <div class="flex_between">
+                <img src="//cdn.weatherapi.com/weather/64x64/night/143.png" alt="">
+                <p class="poppins_font">Sunny</p>
+            </div>
+
+            <div class="flex_between center_pos poppins_font">
+                <span class="material-symbols-outlined">
+                    device_thermostat
+                    </span><p>Avg. temp</p> <p>  22.5°C </p>
+            </div>
+            <div class="forecast_max_min poppins_font">
+                <p>Max 31.3°C</p>
+                <p>Min 15.7°C</p>
+            </div>
+            <div class="flex_between center_pos poppins_font">
+                <span class="material-symbols-outlined">
+                    air
+                    </span><P>Max wind  20.9 Kph</P>
+            </div>
+            <div class="flex_between center_pos poppins_font">
+                <span class="material-symbols-outlined">
+                    water_drop
+                    </span><p> Percipitation : 0.0</p>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+
+
+        const temperature_board = (x)=>{
+            $(".current_weather > img").attr('src' , x.current.condition.icon)
+            // location selector
+            const loc = [x.location.name , x.location.region , x.location.country].join(", ")
+            $('.weather_mood > div.inner_cont > div.current_details.center_pos > p').html(loc)
+            $('.temp_board').html(x.current.temp_c + "°C")
+        }
+
+        const forecast = ()=>{
+            const city = document.getElementById("locate").value
+            $.get(`/five_day_forecast/generate?q=${city}` , (res)=>{
+                $('.cards_cont_forecast').html(res)
+            })
+        }
+
+
+        var input = document.getElementById("locate");
+        input.addEventListener("keypress", function(event) {
+            if (event.key === "Enter") {
+                event.preventDefault();
+                const city = document.getElementById("locate").value
+                $.get(`/api/v1/tell_current_weather?q=${city}` , (res)=>{
+                    temperature_board(res)
+                })
+                forecast();
+            }
+        });
+    </script>
+
+</body>
+</html>
